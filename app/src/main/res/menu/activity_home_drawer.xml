@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/latest"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_latest"
+            android:icon="@drawable/latest"
+            android:title="@string/menu_latest" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/category"
+            android:title="@string/menu_category" />
+        <item
+            android:id="@+id/nav_gifs"
+            android:icon="@drawable/gifs"
+            android:title="@string/menu_gifs" />
+        <item
+            android:id="@+id/nav_my_favorites"
+            android:icon="@drawable/my_favorites"
+            android:title="@string/menu_my_favorites" />
+        <item
+            android:id="@+id/nav_rate_app"
+            android:icon="@drawable/rate_app"
+            android:title="@string/menu_rate_app" />
+
+        <item
+            android:id="@+id/nav_more_app"
+            android:icon="@drawable/more_app"
+            android:title="@string/menu_more_app" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/about_us"
+            android:title="@string/menu_about_us" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/setting"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy_police"
+            android:title="@string/menu_privacy" />
+    </group>
+
+</menu>

@@ -12,9 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MediaActivity"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MediaActivity" />
         <activity android:name=".PostActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
