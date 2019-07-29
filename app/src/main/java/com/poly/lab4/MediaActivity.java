@@ -2,11 +2,14 @@ package com.poly.lab4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.poly.lab4.adapter.MediaAdater;
 import com.poly.lab4.modelMedia.Media;
@@ -41,6 +44,20 @@ public class MediaActivity extends AppCompatActivity {
         } catch (Exception e) {
             getData2();
         }
+
+
+        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                Intent intent = new Intent(MediaActivity.this,ImageDetails.class);
+                intent.putExtra("link",mediaList.get(position).getLink()+"");
+                startActivity(intent);
+
+
+            }
+        });
     }
 
     private void getData2() {
